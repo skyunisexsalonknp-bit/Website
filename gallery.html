@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lookbook · SKY Unisex Salon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400&family=Outfit:wght@200;300" rel="stylesheet">
+</head>
+<body class="bg-cream text-espresso antialiased font-light">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-cream/85 backdrop-blur-md border-b border-espresso/10">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
+            <a href="index.html" class="font-serif text-2xl md:text-3xl tracking-[0.35em] text-espresso">SKY</a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="index.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80">Home</a>
+                <a href="services.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80">Menu</a>
+                <a href="gallery.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso active">Lookbook</a>
+                <a href="about.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80">Story</a>
+                <a href="contact.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80">Contact</a>
+            </nav>
+            <a href="https://wa.me/918707268973" target="_blank" class="hidden md:inline-flex bg-espresso text-cream px-6 py-3 text-[11px] uppercase tracking-[0.28em]">Book Now</a>
+        </div>
+    </header>
+
+    <main class="pt-20 md:pt-32 max-w-7xl mx-auto px-6 md:px-12 pb-32">
+        <section class="mb-12">
+            <p class="text-[11px] uppercase tracking-[0.32em] text-espresso/70 mb-4">Lookbook · Artistry</p>
+            <div class="grid grid-cols-12 gap-10 items-end">
+                <h1 class="col-span-12 md:col-span-8 font-serif text-5xl md:text-7xl leading-[0.95] tracking-tight text-espresso">A quiet portfolio<br>of transformation.</h1>
+                <p class="col-span-12 md:col-span-4 text-espresso/75 leading-relaxed">Hand-picked frames from our studio floor &mdash; colour compositions, precision cuts and editorial moments captured between appointments.</p>
+            </div>
+        </section>
+
+        <!-- Dynamic Filter Grid (Masonry System) -->
+        <section class="columns-2 md:columns-3 lg:columns-4 gap-4 md:gap-6 pt-12 border-t border-espresso/15">
+            <div class="mb-6 break-inside-avoid overflow-hidden zoom-hover relative group">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=900" class="w-full h-auto block" alt="Look">
+                <div class="absolute inset-0 p-4 flex items-end justify-between opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-espresso/80 to-transparent text-cream">
+                    <span class="text-[11px] uppercase tracking-[0.28em]">Editorial Artistry</span>
+                </div>
+            </div>
+            <div class="mb-6 break-inside-avoid overflow-hidden zoom-hover relative group">
+                <img src="https://images.unsplash.com/photo-1605497746444-ac9dbd50a997?q=80&w=800" class="w-full h-auto block" alt="Look">
+                <div class="absolute inset-0 p-4 flex items-end justify-between opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-espresso/80 to-transparent text-cream">
+                    <span class="text-[11px] uppercase tracking-[0.28em]">Dimensional Tones</span>
+                </div>
+            </div>
+            <div class="mb-6 break-inside-avoid overflow-hidden zoom-hover relative group">
+                <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?q=80&w=900" class="w-full h-auto block" alt="Look">
+                <div class="absolute inset-0 p-4 flex items-end justify-between opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-espresso/80 to-transparent text-cream">
+                    <span class="text-[11px] uppercase tracking-[0.28em]">Precision Cut</span>
+                </div>
+            </div>
+            <div class="mb-6 break-inside-avoid overflow-hidden zoom-hover relative group">
+                <img src="https://images.unsplash.com/photo-1608248597481-496100c8c836?q=80&w=800" class="w-full h-auto block" alt="Look">
+                <div class="absolute inset-0 p-4 flex items-end justify-between opacity-0 group-hover:opacity-100 transition-opacity bg-gradient-to-t from-espresso/80 to-transparent text-cream">
+                    <span class="text-[11px] uppercase tracking-[0.28em]">Skin Ritual</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SKY Unisex Salon — Premium Hair, Skin & Grooming in Kanpur. Editorial artistry, effortless luxury.">
+    <title>SKY — Elevate Your Everyday</title>
+    <!-- Tailwind CDN for simple local loading -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Outfit:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-cream text-espresso antialiased font-light">
+
+    <!-- NAVIGATION HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-40 bg-cream/85 backdrop-blur-md border-b border-espresso/10 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 h-20 md:h-24 flex items-center justify-between">
+            <a href="index.html" class="font-serif text-2xl md:text-3xl tracking-[0.35em] text-espresso">SKY</a>
+            <nav class="hidden md:flex items-center gap-10">
+                <a href="index.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso active">Home</a>
+                <a href="services.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80 hover:text-espresso">Menu</a>
+                <a href="gallery.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80 hover:text-espresso">Lookbook</a>
+                <a href="about.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80 hover:text-espresso">Story</a>
+                <a href="contact.html" class="nav-link font-sans text-[13px] uppercase tracking-[0.28em] text-espresso/80 hover:text-espresso">Contact</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="https://wa.me/918707268973?text=Hello%20Sky%20Unisex%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="hidden md:inline-flex items-center bg-espresso text-cream px-6 py-3 text-[11px] uppercase tracking-[0.28em] hover:bg-espresso-deep transition-colors">Book Now</a>
+                <button onclick="toggleMobileMenu()" class="md:hidden text-espresso" aria-label="Open menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU OVERLAY -->
+    <div id="mobileMenu" class="fixed inset-0 z-50 bg-cream transition-all duration-500 hidden opacity-0 flex flex-col justify-between p-6">
+        <div class="flex items-center justify-between h-20">
+            <span class="font-serif text-2xl tracking-[0.35em] text-espresso">SKY</span>
+            <button onclick="toggleMobileMenu()" class="text-espresso" aria-label="Close menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.25" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+        </div>
+        <div class="flex flex-col gap-6 pt-6">
+            <a href="index.html" class="font-serif text-4xl text-espresso">Home</a>
+            <a href="services.html" class="font-serif text-4xl text-espresso/80">Menu</a>
+            <a href="gallery.html" class="font-serif text-4xl text-espresso/80">Lookbook</a>
+            <a href="about.html" class="font-serif text-4xl text-espresso/80">Story</a>
+            <a href="contact.html" class="font-serif text-4xl text-espresso/80">Contact</a>
+        </div>
+        <div class="pt-6 border-t border-espresso/10">
+            <a href="https://wa.me/918707268973?text=Hello%20Sky%20Unisex%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="w-full inline-flex items-center justify-center bg-espresso text-cream px-6 py-4 text-[12px] uppercase tracking-[0.28em]">Book via WhatsApp</a>
+            <p class="mt-4 text-xs text-espresso/60 uppercase tracking-[0.28em] text-center">Mon – Sun · 10:00 AM – 10:00 PM</p>
+        </div>
+    </div>
+
+    <!-- MAIN HERO VIEW -->
+    <main class="pt-20 md:pt-24">
+        <section class="max-w-7xl mx-auto px-6 md:px-12 pt-14 md:pt-24 pb-16 md:pb-32 grid grid-cols-12 gap-6 md:gap-10 items-end grain relative">
+            <div class="col-span-12 md:col-span-7 relative z-10 reveal">
+                <p class="text-[11px] uppercase tracking-[0.32em] text-espresso/70 mb-6">An editorial salon · Kanpur</p>
+                <h1 class="font-serif text-[14vw] md:text-[9vw] leading-[0.88] tracking-tightest text-espresso">
+                    Elevate<br><span class="italic text-espresso/80">your</span> everyday.
+                </h1>
+                <p class="mt-8 md:mt-10 max-w-md text-base md:text-lg text-espresso/75 leading-relaxed font-light">
+                    A sanctuary of quiet luxury where hair, skin and grooming are practiced as living art &mdash; crafted for the modern connoisseur of beauty.
+                </p>
+                <div class="mt-10 flex flex-wrap items-center gap-4">
+                    <a href="https://wa.me/918707268973?text=Hello%20Sky%20Unisex%20Salon%2C%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" class="inline-flex items-center gap-3 bg-espresso text-cream px-7 py-4 text-[11px] uppercase tracking-[0.28em] hover:bg-espresso-deep transition-colors">
+                        Book an Appointment
+                    </a>
+                    <a href="services.html" class="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-espresso border-b border-espresso/60 pb-1 hover:border-espresso">Explore the Menu</a>
+                </div>
+            </div>
+            <div class="col-span-12 md:col-span-5 relative">
+                <div class="relative aspect-[3/4] overflow-hidden zoom-hover shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=1400" alt="Editorial hair portrait" class="w-full h-full object-cover">
+                </div>
+                <div class="hidden md:block absolute -bottom-8 -left-8 bg-cream border border-espresso/10 px-6 py-5 max-w-[220px]">
+                    <p class="font-serif italic text-2xl leading-tight text-espresso">&ldquo;Quiet luxury, felt at every touch.&rdquo;</p>
+                    <p class="mt-3 text-[10px] uppercase tracking-[0.32em] text-espresso/60">&mdash; The Sky ethos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- DISCIPLINE SECTION -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-32 border-t border-espresso/15">
+            <div class="grid grid-cols-12 mb-16 gap-10 items-end">
+                <div class="col-span-12 md:col-span-6">
+                    <p class="text-[11px] uppercase tracking-[0.32em] text-espresso/70 mb-4">The Curation</p>
+                    <h2 class="font-serif text-5xl md:text-7xl leading-[0.95] tracking-tight text-espresso">Three disciplines,<br> one atelier.</h2>
+                </div>
+                <div class="col-span-12 md:col-span-4 md:col-start-8 text-espresso/75 leading-relaxed">
+                    Every service is designed as a ritual &mdash; unhurried, considered, and shaped to your presence. Slow luxury for a fast world.
+                </div>
+            </div>
+
+            <!-- Asymmetric Grid List -->
+            <div class="space-y-16">
+                <div class="grid grid-cols-12 gap-6 md:gap-14 items-center">
+                    <div class="col-span-12 md:col-span-6 zoom-hover overflow-hidden aspect-[5/6]">
+                        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200" alt="Hair Artistry" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-12 md:col-span-6">
+                        <p class="text-[11px] uppercase tracking-[0.32em] text-espresso/50 mb-4">01 · Discipline</p>
+                        <h3 class="font-serif text-4xl md:text-6xl text-espresso leading-none">Hair Artistry</h3>
+                        <p class="mt-6 md:mt-8 text-espresso/75 leading-relaxed max-w-md">Signature cuts, editorial colour and gloss rituals built around your bone structure.</p>
+                        <a href="services.html" class="mt-8 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-espresso border-b border-espresso/60 pb-1">View menu &rarr;</a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-6 md:gap-14 items-center">
+                    <div class="col-span-12 md:col-span-6 md:order-2 zoom-hover overflow-hidden aspect-[5/6]">
+                        <img src="https://images.unsplash.com/photo-1608248597481-496100c8c836?q=80&w=1200" alt="Skin Therapies" class="w-full h-full object-cover">
+                    </div>
+                    <div class="col-span-12 md:col-span-6 md:order-1">
+                        <p class="text-[11px] uppercase tracking-[0.32em] text-espresso/50 mb-4">02 · Discipline</p>
+                        <h3 class="font-serif text-4xl md:text-6xl text-espresso leading-none">Skin Therapies</h3>
+                        <p class="mt-6 md:mt-8 text-espresso/75 leading-relaxed max-w-md">Bespoke facials, ceremonies and glow rituals for a serene, luminous complexion.</p>
+                        <a href="services.html" class="mt-8 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.28em] text-espresso border-b border-espresso/60 pb-1">View menu &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-espresso text-cream pt-24 pb-12">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 text-center">
+            <h2 class="font-serif text-[22vw] md:text-[18vw] leading-[0.85] tracking-tightest text-cream/95 select-none mb-12">SKY</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-t border-cream/15 pt-14 text-left text-sm text-cream/80">
+                <div>
+                    <p class="text-[11px] uppercase tracking-[0.32em] text-cream/60 mb-4">Visit</p>
+                    <p class="leading-relaxed">HIG 512, Main Road Ratan Lal Nagar,<br>Opposite Neta ji Cold Drinks,<br>Kanpur, Uttar Pradesh</p>
+                </div>
+                <div>
+                    <p class="text-[11px] uppercase tracking-[0.32em] text-cream/60 mb-4">Hours</p>
+                    <p>Mon – Sun · 10:00 AM – 10:00 PM</p>
+                    <p class="mt-2">Phone: <a href="tel:918707268973" class="hover:underline">+91 8707268973</a></p>
+                </div>
+                <div>
+                    <p class="text-[11px] uppercase tracking-[0.32em] text-cream/60 mb-4">Connect</p>
+                    <a href="https://wa.me/918707268973" target="_blank" class="inline-block bg-cream text-espresso px-6 py-3 text-[11px] uppercase tracking-[0.28em]">Book via WhatsApp</a>
+                </div>
+            </div>
+            <div class="mt-16 text-center text-[11px] uppercase tracking-[0.28em] text-cream/40">
+                © 2026 Sky Unisex Salon · Kanpur · Crafted with quiet intention.
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP CTA -->
+    <a href="https://wa.me/918707268973" target="_blank" class="fixed bottom-6 right-6 z-40 bg-espresso text-cream pl-4 pr-5 py-3 flex items-center gap-3 shadow-xl hover:pr-6 transition-all">
+        <span class="w-2.5 h-2.5 bg-emerald-400 rounded-full animate-pulse"></span>
+        <span class="text-[11px] uppercase tracking-[0.28em]">Book via WhatsApp</span>
+    </a>
+
+    <script src="main.js"></script>
+</body>
+</html>

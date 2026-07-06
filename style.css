@@ -1,0 +1,76 @@
+/* Core Color Tokens mapping directly to our premium neutral layout theme */
+:root {
+    --cream: #e7ddd1;
+    --cream-soft: #f5efe9;
+    --espresso: #462a1e;
+    --espresso-deep: #2b1911;
+}
+
+/* Base typography setup anchoring Cormorant Garamond and Outfit */
+body {
+    background-color: var(--cream);
+    color: var(--espresso);
+    font-family: 'Outfit', sans-serif;
+}
+
+.font-serif {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Custom text highlighting colors matching our palette */
+::selection {
+    background-color: var(--espresso);
+    color: var(--cream);
+}
+
+/* Underline navigation layout link effect */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    height: 1px;
+    background-color: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 350ms ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+/* Subtle architectural overlay styling adding depth texture across sections */
+.grain::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(70,42,30,0.06) 1px, transparent 1px);
+    background-size: 3px 3px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Slow, elegant hover easing for editorial imagery elements */
+.zoom-hover img {
+    transition: transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.zoom-hover:hover img {
+    transform: scale(1.04);
+}
+
+/* Pricing menu dotted connection line leaders */
+.dot-leader {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+}
+.dot-leader .leader {
+    flex: 1 1 auto;
+    border-bottom: 1px dotted rgba(70, 42, 30, 0.35);
+}
